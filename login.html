@@ -9,28 +9,26 @@
 <body>
     <header>
         <h1>Login</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="correct-scenarios.html">Correct Scenarios</a></li>
-                <li><a href="missed-scenarios.html">Missed Scenarios</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
-        <form id="login-form">
+        <form id="login-form" onsubmit="handleLogin(event)">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
             <button type="submit">Login</button>
         </form>
     </main>
     <footer>
         <p>&copy; 2024 You Make the Call. All Rights Reserved.</p>
     </footer>
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            localStorage.setItem('currentUser', username);
+
+            alert('Login successful! You can now access your progress.');
+            window.location.href = 'index.html'; // Redirect to home or questions page
+        }
+    </script>
 </body>
 </html>

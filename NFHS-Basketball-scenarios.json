@@ -1,0 +1,12 @@
+[
+    {
+        "question": "Team A's player goes out of bounds while dribbling the ball. What is the ruling?",
+        "choices": [
+            "Turnover to Team B",
+            "Team A retains possession",
+            "Jump ball",
+            "Technical foul"
+        ],
+        "correctAnswer": 0
+    }
+]

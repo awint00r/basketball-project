@@ -19,13 +19,19 @@
         </nav>
     </header>
     <main>
-        <div id="scenario-container">
-            <!-- Correct scenarios will be dynamically displayed here -->
-        </div>
+        <section id="category-selector">
+            <label for="category-select">Choose a category:</label>
+            <select id="category-select" onchange="displaySelectedCategory('correct')">
+                <option value="NCAA-W">NCAA-W Basketball</option>
+                <option value="NFHS-Basketball">NFHS Basketball</option>
+                <option value="NFHS-Football">NFHS Football</option>
+            </select>
+        </section>
+        <section id="correct-scenarios" class="scenario-container"></section>
     </main>
     <footer>
         <p>&copy; 2024 You Make the Call. All Rights Reserved.</p>
     </footer>
-    <script src="displayscenarios.js"></script>
+    <script src="displayScenarios.js"></script>
 </body>
 </html>

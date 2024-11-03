@@ -1,0 +1,162 @@
+[
+    {
+        "question": "During the closing moments of a game, a fight results in several disqualifications, leaving Team A with 11 players and Team B with only 9. Can the game continue under these circumstances?",
+        "choices": [
+            "No, both teams must have 11 players to continue the game.",
+            "Yes, the game can continue as long as Team A has at least 11 players.",
+            "Yes, the game can continue even if one team has fewer than 11 players.",
+            "No, a forfeit must be declared if a team has fewer than 11 players."
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Before the game, both teams hesitate to enter the field, waiting for the other team to go first. What action should the referee take?",
+        "choices": [
+            "The referee should instruct the visiting team to enter the field first.",
+            "The referee should allow both teams to continue waiting until one enters.",
+            "The referee should direct the home team to enter the field first.",
+            "The referee should call the game due to delay."
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "During pregame warm-ups, unsportsmanlike conduct occurs with 35 minutes left on the countdown clock. What should the game officials do if the state association rule states that they assume authority 30 minutes before the game?",
+        "choices": [
+            "The officials should ignore the behavior, as it is outside their jurisdiction.",
+            "The officials should penalize both teams for unsportsmanlike conduct.",
+            "The officials should only monitor the situation and inform the coaches.",
+            "The officials should wait until the game officially starts to take action."
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What should happen if the state association rule states that game officials assume authority 45 minutes before the game?",
+        "choices": [
+            "The officials should assess unsportsmanlike conduct fouls before the kickoff.",
+            "The officials should not take action until the official game start.",
+            "The officials should only issue warnings and not assess fouls.",
+            "The officials should consult with team coaches before making any decisions."
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "If the state association rules do not address when game officials assume authority, what is the appropriate ruling?",
+        "choices": [
+            "The officials can penalize the teams for unsportsmanlike conduct.",
+            "The officials have no jurisdiction, and it is an administrative issue.",
+            "The officials should give a warning to the teams and report the behavior.",
+            "The officials should postpone the game until the state association provides clarification."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "A fight breaks out near the end of the game, resulting in the game being terminated early. The game officials record the involved players' numbers: (a) on the field and report to the head coaches; or (b) in the locker room after reconciling the information. What is the correct procedure?",
+        "choices": [
+            "Only (a) is correct.",
+            "Only (b) is correct.",
+            "Both (a) and (b) are correct.",
+            "Neither (a) nor (b) are correct."
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "After a game ends with a fight, game officials record known player numbers involved. The state association later reviews game film and adds more players to the report. Is this allowed?",
+        "choices": [
+            "Yes, this is allowed as per adopted procedures.",
+            "No, only game officials can make such changes.",
+            "The review must be done before the game ends.",
+            "The game cannot be reviewed once it is over."
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "A coach curses at game officials as they leave the field after the game has ended. Is this considered an unsportsmanlike act?",
+        "choices": [
+            "Yes, but it only applies if the game has not officially ended.",
+            "No, because the game is over and no fouls apply.",
+            "Yes, and it must be reported even though no distance penalty applies.",
+            "No, because only actions during the game matter."
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "A1 advances the ball to the goal line, and replay equipment shows A1 stepped out at the 2-yard line. Can the replay be used to overturn the call?",
+        "choices": [
+            "Yes, in all cases.",
+            "No, unless allowed by state association rules for postseason games.",
+            "Only if both teams agree to use replay.",
+            "Yes, but only during regular season games."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Team A provides two balls for the referee's examination, but Team B does not provide a ball. What will happen?",
+        "choices": [
+            "The game is delayed until Team B provides a ball.",
+            "Team A's balls will be used until Team B provides a legal ball.",
+            "Team B will be penalized for not providing a ball.",
+            "The game cannot start without balls from both teams."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "The 'chain crew,' with extensive experience, insists on placing the line-to-gain equipment on the sideline even though there is room to place it 2 yards off the sideline. What should the game officials do?",
+        "choices": [
+            "Allow the crew to place the equipment on the sideline.",
+            "Contact game administration to enforce the 2-yard placement.",
+            "Let the home team decide the placement.",
+            "Delay the game until the crew complies."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "The home-team management informs game officials that a visible play clock will be used during the game. What should the game officials do?",
+        "choices": [
+            "Approve its use as it helps maintain timing.",
+            "Allow it only if it is run by a certified official.",
+            "Allow it only with state association approval.",
+            "Deny its use in all cases."
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Team A's captain requests a time-out before deciding on a penalty choice or where to spot the ball for a try. What is allowed?",
+        "choices": [
+            "A time-out can be requested before all decisions.",
+            "A time-out is only allowed for deciding where to spot the ball for a try.",
+            "A time-out is not allowed before penalty decisions.",
+            "No time-out is allowed at all."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Before the snap, it is discovered that A1 and A2 are both wearing number 81. What is the ruling?",
+        "choices": [
+            "It is a foul at the snap for illegal numbering.",
+            "No penalty, as both players have the same number.",
+            "One player must change numbers immediately.",
+            "The play continues with no action taken."
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Game officials notice both teams wearing non-white jerseys when they arrive on the field. The visiting team's coach states they were not informed of the home team's colors. What is the correct action?",
+        "choices": [
+            "The visiting team must change to white jerseys.",
+            "The home team must change to white jerseys.",
+            "The game is delayed until one team changes.",
+            "No action is taken as it's not enforceable."
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "During pregame, an umpire notices a player does not appear to be wearing hip pads. Investigation reveals the player is wearing a girdle with 'bubble type' protective padding. What is the ruling?",
+        "choices": [
+            "The player must leave the game as the padding is insufficient.",
+            "The padding is legal, and the player may continue playing.",
+            "The player must be penalized for not wearing standard hip pads.",
+            "The referee must check all players' equipment."
+        ],
+        "correctAnswer": 1
+    }
+]

@@ -4,7 +4,10 @@ window.onload = function () {
 };
 
 function loadScenario() {
-    fetch('scenarios.json') // Make sure the path matches where you store the file
+    const categorySelect = document.getElementById('category-select');
+    const selectedCategory = categorySelect ? categorySelect.value : 'NCAA-W'; // Default category
+
+    fetch(`${selectedCategory}-scenarios.json`) // Dynamically load JSON based on category
         .then(response => response.json())
         .then(scenarios => {
             const scenarioArea = document.getElementById('scenario-area');
@@ -37,7 +40,7 @@ function loadScenario() {
             selectedScenario.choices.forEach((choice, index) => {
                 const button = document.createElement('button');
                 button.textContent = choice;
-                button.onclick = () => checkAnswer(index, selectedScenario, answeredQuestions);
+                button.onclick = () => checkAnswer(index, selectedScenario, answeredQuestions, selectedCategory);
                 choicesEl.appendChild(button);
             });
             scenarioArea.appendChild(choicesEl);
@@ -45,9 +48,20 @@ function loadScenario() {
         .catch(error => console.error('Error loading scenarios:', error));
 }
 
-function checkAnswer(selectedIndex, selectedScenario, answeredQuestions) {
+function getCurrentUser() {
+    return localStorage.getItem('currentUser');
+}
+
+function checkAnswer(selectedIndex, selectedScenario, answeredQuestions, category) {
+    const currentUser = getCurrentUser();
+    if (!currentUser) {
+        alert('Please log in to save your progress.');
+        return;
+    }
+
     const correctIndex = selectedScenario.correctAnswer;
     const answerData = {
+        category: category,
         question: selectedScenario.question,
         choices: selectedScenario.choices,
         correctAnswer: selectedScenario.choices[correctIndex],
@@ -56,18 +70,28 @@ function checkAnswer(selectedIndex, selectedScenario, answeredQuestions) {
 
     if (selectedIndex === correctIndex) {
         alert("Correct! Great job.");
-        saveScenarioToStorage('correctScenarios', answerData);
+        saveScenarioToStorageUnique(`correctScenarios-${currentUser}-${category}`, answerData);
         answeredQuestions.push(selectedScenario.question);
         localStorage.setItem('answeredQuestions', JSON.stringify(answeredQuestions));
     } else {
         alert("Incorrect. The correct answer is: " + selectedScenario.choices[correctIndex]);
-        saveScenarioToStorage('missedScenarios', answerData);
+        saveScenarioToStorage(`missedScenarios-${currentUser}-${category}`, answerData);
         answeredQuestions.push(selectedScenario.question); // Add the question to answeredQuestions even if incorrect
         localStorage.setItem('answeredQuestions', JSON.stringify(answeredQuestions));
     }
 
     // Load the next scenario
     loadScenario();
+}
+
+function saveScenarioToStorageUnique(key, data) {
+    let storedData = JSON.parse(localStorage.getItem(key)) || [];
+
+    // Check if the question already exists in the stored data
+    if (!storedData.some(item => item.question === data.question)) {
+        storedData.push(data);
+        localStorage.setItem(key, JSON.stringify(storedData));
+    }
 }
 
 function saveScenarioToStorage(key, data) {

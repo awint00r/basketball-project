@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>You Make the Call - Home</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file path -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>You Make the Call</h1>
+        <div id="welcome-message" class="welcome-message"></div> <!-- Added div for welcome message -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,6 +20,14 @@
         </nav>
     </header>
     <main>
+        <section id="category-selector">
+            <label for="category-select">Choose a sport category:</label>
+            <select id="category-select" onchange="loadScenario()">
+                <option value="NCAA-W">NCAA-W Basketball</option>
+                <option value="NFHS-Basketball">NFHS Basketball</option>
+                <option value="NFHS-Football">NFHS Football</option>
+            </select>
+        </section>
         <section id="scenario-area">
             <!-- Scenario will be dynamically inserted here -->
         </section>
@@ -26,6 +35,14 @@
     <footer>
         <p>&copy; 2024 You Make the Call. All Rights Reserved.</p>
     </footer>
+    <script src="displayScenarios.js"></script>
     <script src="scenarios.js"></script>
+    <script>
+        // Call the function to display the welcome message on page load
+        window.onload = function () {
+            showWelcomeMessage();
+            loadScenario();
+        };
+    </script>
 </body>
 </html>

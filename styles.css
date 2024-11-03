@@ -21,6 +21,7 @@ header {
 nav {
     background-color: #34495E;
     position: relative;
+    overflow: hidden; /* Prevent elements from overflowing */
 }
 
 nav ul {
@@ -30,19 +31,21 @@ nav ul {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 nav ul li {
-    margin: 5px 10px;
+    margin: 5px 5px; /* Reduced margin for better fit */
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ECF0F1;
     font-size: 16px;
-    padding: 8px 15px;
+    padding: 8px 12px; /* Adjusted padding for better display */
     display: inline-block;
     transition: background-color 0.3s;
+    white-space: nowrap; /* Prevent text from breaking */
 }
 
 nav ul li a:hover {
@@ -76,6 +79,7 @@ nav ul.expanded {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 main {
@@ -141,11 +145,16 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 3px 0; /* Reduced margin for more space */
     }
 
     nav ul li a {
         font-size: 14px;
-        padding: 6px 10px;
+        padding: 6px 8px; /* Adjusted padding for better fit */
     }
 
     #scenario-area {
@@ -156,5 +165,12 @@ footer {
     #scenario-area button {
         padding: 10px;
         font-size: 14px;
+    }
+
+    .welcome-message {
+        text-align: center;
+        font-size: 1.2em;
+        margin: 10px 0;
+        color: #34495E; /* Dark blue-grey to match the theme */
     }
 }

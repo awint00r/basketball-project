@@ -1,0 +1,90 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EAEDED; /* Neutral Background */
+    color: #2C3E50; /* Dark Text Color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #34495E; /* Dark Blue-Grey for Referee Uniform Theme */
+    padding: 20px;
+    text-align: center;
+    color: #ECF0F1; /* Light Text Color */
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-color: #34495E;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ECF0F1;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #2C3E50; /* Darker hover effect */
+    color: #ECF0F1;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+#scenario-area {
+    text-align: center;
+    border: 2px solid #2C3E50;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #BDC3C7; /* Light Grey with Blue Tint */
+    max-width: 800px; /* Increased width */
+    margin: 20px auto; /* Centering with space */
+    font-size: 20px; /* Larger font */
+}
+
+/* Styles for Choices */
+#scenario-area button {
+    display: block; /* Display buttons vertically */
+    width: 100%; /* Full width within container */
+    margin: 10px 0; /* Space between each button */
+    padding: 10px;
+    background-color: #34495E; /* Button background */
+    color: #ECF0F1; /* Button text color */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#scenario-area button:hover {
+    background-color: #2C3E50; /* Darker hover effect */
+}
+
+footer {
+    text-align: center;
+    background-color: #34495E;
+    color: #ECF0F1;
+    padding: 10px 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}

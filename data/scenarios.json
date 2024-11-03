@@ -1,0 +1,72 @@
+[
+    {
+        "question": "Team A's player goes out of bounds while dribbling the ball. What is the ruling?",
+        "choices": [
+            "Turnover to Team B",
+            "Team A retains possession",
+            "Jump ball",
+            "Technical foul"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "The shot clock resets to how many seconds after an offensive rebound?",
+        "choices": [
+            "20 seconds",
+            "24 seconds",
+            "30 seconds",
+            "Reset is not allowed"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "A1 attempts a jump shot and the ball contacts the rim, then rebounds. B1 catches the ball, but an inadvertent whistle is blown. What is the ruling?",
+        "choices": [
+            "Award possession to Team A",
+            "Award possession to Team B",
+            "Jump ball",
+            "Re-do the play"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "A1 is dribbling in the frontcourt when B1 reaches in and dislodges the ball. A1 then steps on the boundary line while trying to retrieve the ball. What is the ruling?",
+        "choices": [
+            "Violation on A1",
+            "Violation on B1",
+            "No violation",
+            "Jump ball"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "During a throw-in, A1’s foot breaks the plane of the boundary line but does not touch inbounds. Is this a violation?",
+        "choices": [
+            "Yes",
+            "No",
+            "Depends on the situation",
+            "Technical foul"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "A1 is airborne during a shot attempt and B1 contacts A1 before the release, causing the ball to go in. What is the ruling?",
+        "choices": [
+            "Count the basket and award one free throw",
+            "No basket and Team A retains possession",
+            "Count the basket with no free throw",
+            "Foul on A1"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "A1 fakes a pass and then jumps, releasing the ball as B2 blocks it, causing it to return to A1 before A1 lands. Can A1 start another dribble?",
+        "choices": [
+            "Yes, if the block was clean",
+            "No",
+            "Only if another player touches the ball",
+            "Yes, in all cases"
+        ],
+        "correctAnswer": 1
+    }
+]

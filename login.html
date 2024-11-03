@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Correct Scenarios</title>
-    <link rel="stylesheet" href="/basketball-project/../css/styles.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body data-page-type="correct">
+<body>
     <header>
-        <h1>Correct Scenarios</h1>
+        <h1>Login</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,13 +19,18 @@
         </nav>
     </header>
     <main>
-        <div id="scenario-container">
-            <!-- Correct scenarios will be dynamically displayed here -->
-        </div>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
     </main>
     <footer>
         <p>&copy; 2024 You Make the Call. All Rights Reserved.</p>
     </footer>
-    <script src="/basketball-project/../js/displayscenarios.js"></script>
 </body>
 </html>

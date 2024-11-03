@@ -4,7 +4,7 @@ window.onload = function () {
 };
 
 function loadScenario() {
-    fetch('/data/scenarios.json') // Make sure the path matches where you store the file
+    fetch('scenarios.json') // Make sure the path matches where you store the file
         .then(response => response.json())
         .then(scenarios => {
             const scenarioArea = document.getElementById('scenario-area');

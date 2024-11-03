@@ -54,10 +54,6 @@ function getCurrentUser() {
 
 function checkAnswer(selectedIndex, selectedScenario, answeredQuestions, category) {
     const currentUser = getCurrentUser();
-    if (!currentUser) {
-        alert('Please log in to save your progress.');
-        return;
-    }
 
     const correctIndex = selectedScenario.correctAnswer;
     const answerData = {
@@ -70,10 +66,14 @@ function checkAnswer(selectedIndex, selectedScenario, answeredQuestions, categor
 
     if (selectedIndex === correctIndex) {
         alert("Correct! Great job.");
-        saveScenarioToStorageUnique(`correctScenarios-${currentUser}-${category}`, answerData);
+        if (currentUser) {
+            saveScenarioToStorageUnique(`correctScenarios-${currentUser}-${category}`, answerData);
+        }
     } else {
         alert("Incorrect. The correct answer is: " + selectedScenario.choices[correctIndex]);
-        saveScenarioToStorage(`missedScenarios-${currentUser}-${category}`, answerData);
+        if (currentUser) {
+            saveScenarioToStorage(`missedScenarios-${currentUser}-${category}`, answerData);
+        }
     }
 
     answeredQuestions.push(selectedScenario.question);

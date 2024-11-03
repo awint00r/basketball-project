@@ -18,57 +18,90 @@ header {
 }
 
 /* Navigation Bar Styles */
+nav {
+    background-color: #34495E;
+    position: relative;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    background-color: #34495E;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 5px 10px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ECF0F1;
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 16px;
+    padding: 8px 15px;
     display: inline-block;
     transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #2C3E50; /* Darker hover effect */
+    background-color: #2C3E50;
     color: #ECF0F1;
+}
+
+/* Mobile Navigation Toggle */
+nav .menu-toggle {
+    display: none;
+    background-color: #34495E;
+    border: none;
+    color: #ECF0F1;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+nav .menu-toggle:hover {
+    background-color: #2C3E50;
+}
+
+nav ul.collapsed {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav ul.expanded {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {
     flex: 1;
-    padding: 20px;
+    padding: 15px;
 }
 
 #scenario-area {
     text-align: center;
     border: 2px solid #2C3E50;
-    padding: 40px;
+    padding: 30px;
     border-radius: 12px;
-    background-color: #BDC3C7; /* Light Grey with Blue Tint */
-    max-width: 800px; /* Increased width */
-    margin: 20px auto; /* Centering with space */
-    font-size: 20px; /* Larger font */
+    background-color: #BDC3C7;
+    max-width: 90%;
+    margin: 20px auto;
+    font-size: 18px;
 }
 
 /* Styles for Choices */
 #scenario-area button {
-    display: block; /* Display buttons vertically */
-    width: 100%; /* Full width within container */
-    margin: 10px 0; /* Space between each button */
-    padding: 10px;
-    background-color: #34495E; /* Button background */
-    color: #ECF0F1; /* Button text color */
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: #34495E;
+    color: #ECF0F1;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -76,7 +109,7 @@ main {
 }
 
 #scenario-area button:hover {
-    background-color: #2C3E50; /* Darker hover effect */
+    background-color: #2C3E50;
 }
 
 footer {
@@ -87,4 +120,41 @@ footer {
     position: sticky;
     bottom: 0;
     width: 100%;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    header, footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    nav .menu-toggle {
+        display: block;
+    }
+
+    nav ul.collapsed {
+        display: none;
+    }
+
+    nav ul.expanded {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    #scenario-area {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    #scenario-area button {
+        padding: 10px;
+        font-size: 14px;
+    }
 }

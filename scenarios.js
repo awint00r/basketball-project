@@ -61,7 +61,7 @@ function checkAnswer(selectedIndex, selectedScenario, answeredQuestions, categor
 
     const correctIndex = selectedScenario.correctAnswer;
     const answerData = {
-        category: category,
+        category: category, // Ensure category is included
         question: selectedScenario.question,
         choices: selectedScenario.choices,
         correctAnswer: selectedScenario.choices[correctIndex],
@@ -71,14 +71,13 @@ function checkAnswer(selectedIndex, selectedScenario, answeredQuestions, categor
     if (selectedIndex === correctIndex) {
         alert("Correct! Great job.");
         saveScenarioToStorageUnique(`correctScenarios-${currentUser}-${category}`, answerData);
-        answeredQuestions.push(selectedScenario.question);
-        localStorage.setItem('answeredQuestions', JSON.stringify(answeredQuestions));
     } else {
         alert("Incorrect. The correct answer is: " + selectedScenario.choices[correctIndex]);
         saveScenarioToStorage(`missedScenarios-${currentUser}-${category}`, answerData);
-        answeredQuestions.push(selectedScenario.question); // Add the question to answeredQuestions even if incorrect
-        localStorage.setItem('answeredQuestions', JSON.stringify(answeredQuestions));
     }
+
+    answeredQuestions.push(selectedScenario.question);
+    localStorage.setItem('answeredQuestions', JSON.stringify(answeredQuestions));
 
     // Load the next scenario
     loadScenario();

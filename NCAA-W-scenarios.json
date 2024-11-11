@@ -68,5 +68,55 @@
             "Yes, in all cases"
         ],
         "correctAnswer": 1
+    },
+    {
+        "question": "A player makes a successful basket, and the game clock shows zeroes as the ball passes through the hoop. The officials go to replay and determine that the player had a foot out of bounds before the shot was released. What should be the ruling?",
+        "choices": [
+            "The goal counts, and play resumes with a throw-in for the opposing team.",
+            "The goal is disallowed, and the exact time when the player stepped out of bounds is placed on the game clock.",
+            "The goal is disallowed, and the quarter immediately ends.",
+            "The goal counts, and a technical foul is assessed."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "During the fourth quarter, Team A’s coach requests a timeout, creating the last electronic-media timeout of the quarter. Shortly afterward, a goal is scored by A2, and officials need to confirm if it was a two- or three-point shot. When is replay allowed?",
+        "choices": [
+            "At the end of the quarter.",
+            "Immediately following the goal.",
+            "During the next dead ball after the goal.",
+            "Replay is not allowed in this scenario."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "With less than a second left on the shot clock, A1 releases a shot. The officials are unable to hear the shot-clock horn due to crowd noise. What is the correct replay protocol?",
+        "choices": [
+            "Replay cannot be used, and the goal counts if made.",
+            "Officials may use replay to confirm if the shot was released before the shot-clock expired.",
+            "Replay is only used if the shot was unsuccessful.",
+            "Replay can be used, but only after a timeout is called."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "During a stoppage, Team B’s coach requests a review of a foul on A1 for a potential disqualifying act. The officials use replay but find that the foul was not disqualifying or intentional, only a personal foul. What happens next?",
+        "choices": [
+            "The foul remains as an intentional foul.",
+            "The officials change the foul to a personal foul, and Team B is charged a timeout.",
+            "No changes can be made after the review.",
+            "The foul is upgraded to a disqualifying foul."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Near the end of the first quarter, A1 attempts a shot that does not make contact with the rim, but the shot clock is mistakenly reset. The officials are unsure if there was contact and decide to review. What should be done?",
+        "choices": [
+            "Officials continue play as the shot clock operator made the correct decision.",
+            "Replay is permitted, and officials adjust the shot clock if they determine no contact was made.",
+            "Replay cannot be used, and the shot clock remains as reset.",
+            "Officials can only reset the shot clock after confirming the error at halftime."
+        ],
+        "correctAnswer": 1
     }
 ]

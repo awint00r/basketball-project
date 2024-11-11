@@ -8,5 +8,25 @@
             "Technical foul"
         ],
         "correctAnswer": 0
+    },
+    {
+            "question": "How many seconds does a Team have to cross the division line to avoid a violation?",
+            "choices": [
+                "12 seconds",
+                "No limit",
+                "10 seconds",
+                "8 seconds"
+        ],
+        "correctAnswer": 2
+    },
+    {
+            "question": "At the start of the game, the officials allow the jumpers to face the wrong direction. A1 taps the ball back to A2 who realizes they were facing incorrectly. A2 then scores an uncontested layup. Ruling?",
+            "choices": [
+                "No basket. Stop the game and redo the jump ball",
+                "Score two points for team A, stop the game and advise all players of the correct direction",
+                "Allow the teams to continue shooting on the incorrect basket and switch at halftime",
+                "Score two points for team B and allow A to inbound the ball on the endline"
+            ],
+            "correctAnswer": 1
     }
 ]
